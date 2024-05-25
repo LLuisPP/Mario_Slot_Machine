@@ -1,0 +1,230 @@
+ <!doctype html>
+ <html>
+   <head>
+      <meta charset="utf-8"/>
+      <link rel="shortcut icon" href="img/star.ico" type="image/extensión" />
+      <title>Tragaperras Ervigio</title>
+      <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+      <style type="text/css">
+          body{
+            margin:auto;
+            font-family: 'Pacifico', cursive;
+          }
+          img{
+            max-width:100%;
+            vertical-align:top;
+          }
+          section{
+            position:relative;
+            width:550px;
+            margin:auto;
+            margin-top:20px;
+          }	
+          .ventanas,.botones{
+            display:flex;
+            justify-content:center;
+            margin-bottom:12px;
+          }
+          .ventana:nth-child(2),.boton:nth-child(2){
+            margin:auto 16px;        
+          }
+          .ventana{
+            padding:6px;
+            width:150px;
+            height:150px;
+            border:4px solid crimson;
+            border-radius:12px;
+            display:flex;
+            align-items:center;
+            justify-content:center;           
+          }
+          .boton{
+            padding:6px;
+            box-shadow:0 0 12px crimson inset;
+            width:150px;
+            height:40px;
+            border:4px solid crimson;
+            border-radius:12px;
+            text-align:center;
+            line-height:40px;
+            font-size:1.2em;
+            background-color:#ffffff;
+            color:rgb(0, 0, 0);
+            cursor:pointer;
+            user-select:none;
+            -moz-user-select:none;
+          }
+          .boton:hover,#lanzar:hover{
+            background-color:white;
+            box-shadow:0 0 13px crimson inset;
+          }
+          header{
+            height:168px;
+          }
+          #disponible{
+            display:flex;
+            align-items:center;
+          }
+          #credito{
+            color:orange;
+            font-size:1.4em;
+          }
+          #dinero{
+            font-size:5em;
+            line-height:30px;
+          }
+          #lanzar{
+            cursor:pointer;
+            padding:15px 18px 15px 10px;
+            user-select:none;
+            -moz-user-select:none;
+            width:180px;
+            height:180px;
+            border-radius:50%;
+            border:6px solid crimson;
+            text-align:center;
+            font-size:3.9em;
+            line-height:140px;
+            box-shadow:0 0 40px crimson inset;
+            position:absolute;
+            left:0;
+            right:0;
+            background-color:#ffffff;
+            margin:auto;
+            top:1px;
+            box-sizing:border-box;
+          }
+          .euros{
+            font-size:1.5rem;
+          }
+          #monedas{
+            width:170px;
+            margin-top:10px;
+          }
+          #monedas img{
+            width:30px;
+            margin-right:3px;
+            margin-bottom:3px;
+          }
+          #velo{
+            display:none;
+            width:100%;
+            height:100%;
+            background-color:rgba(255,255,255,0.5);
+            position:fixed;
+            top:0;
+            left:0;
+            justify-content:center;
+            user-select:none;
+            -moz-user-select:none;       
+          }
+          #cuadro_mensaje{
+            width:540px;
+            height:105px;
+            border-radius:12px;
+            border:5px solid crimson;
+            background-color:rgba(255,255,255,0.9);
+            position:relative;
+            top:355px;
+            padding:5px;
+          }
+          #mensaje{
+            font-size:1.7em;
+            color:crimson;
+            padding:2px;
+            text-align:center;
+          }
+          #cruz{
+            position:absolute;
+            top:5px;
+            right:5px;
+            cursor:pointer;
+          }
+          .moneda{
+            margin-top:5px;
+          }
+
+          #tablaPremios{
+            width:260px;
+            height:230px;
+            padding:10px 15px 20px 30px;
+            border-radius:12px;
+            user-select:none;
+            border:4px solid crimson;
+            box-shadow:0 0 30px crimson inset;
+            text-align:left;
+            font-size:1em;
+            line-height:14px;
+            background-color:#ffffff;
+            margin:auto;
+            top:1px;
+            box-sizing:border-box;
+          }
+
+          #logo{
+            width:150px;
+            height:200px;
+            padding:1px 10px 10px 10px;
+            border-radius:12px;
+            user-select:none;
+           
+            text-align:left;
+            font-size:1em;
+            line-height:14px;
+            
+            margin:auto;
+            top:1px;
+            box-sizing:border-box;
+          }
+       </style>
+    <script type="text/javascript" src="js/index.js">
+    </script>
+</head>
+
+<body>  
+  <section>
+    <header>
+    <div id="disponible">
+    <div id="credito">Crédito: <div id="cantidad"></div></div>
+    <div id="dinero"><span class="euros">€</span></div></div>
+    <div id="monedas">
+    </div>
+    <div id="lanzar">Tirar</div>
+  </header>
+    <div class="ventanas">
+        <div class="ventana" id="ventana1">
+          <img src="img/tube.png">
+        </div>
+        <div class="ventana" id="ventana2">
+          <img src="img/tube.png">
+        </div>
+        <div class="ventana" id="ventana3">
+          <img src="img/tube.png">
+        </div>
+    </div>
+    <div class="botones">
+        <div class="boton" id="b0">
+          Volver a tirar
+        </div>
+        <div class="boton" id="b1">
+          Volver a tirar
+        </div>
+        <div class="boton" id="b2">
+          Volver a tirar
+        </div>
+    </div>
+    <div id="disponible">
+    <div id="logo"></div>
+    <div id="tablaPremios"></div>
+    </div>
+  </section>
+  <div id="velo">
+    <div id="cuadro_mensaje">
+      <img id="cruz" src="img/star.ico" width="28px">
+
+      <div id="mensaje"></div>
+    </div>
+  </div>
+  <audio id="audio" src=""></audio>
+   </body>
+ </html>
