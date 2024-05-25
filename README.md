@@ -6,7 +6,7 @@ My first programming project that consist in a simple slot machine game inspired
   
 ||Link|Description|Date|
 |---|---|:---|---|
-|🌐|[Mario_slot machine game](https://marioslotmachine.onrender.com/)|🎰 My first web page, a Mario Bros based slot machine game|Oct'22|
+|🌐|[Mario_slots machine](https://marioslotmachine.onrender.com/)|🎰 My first web page, a Mario Bros based slot machine game|Oct'22|
 
 </div>
 
