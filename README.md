@@ -2,7 +2,13 @@
 
 My first programming project that consist in a simple slot machine game inspired in mario bros videogame saga
 
-<div><a src="https://marioslotmachine.onrender.com/">Play Mario Slots machine</a></div>
+<div align="center">
+  
+||Link|Description|Date|
+|---|---|:---|---|
+|🌐|[Mario_slot machine game](https://marioslotmachine.onrender.com/)|🎰 My first web page, a Mario Bros based slot machine game|Oct'22|
+
+</div>
 
 Programmed with JavaScript and html5 + css3
 
